@@ -1,0 +1,214 @@
+/*
+Auteur: <Siemen van de Braak>
+Aanmaakdatum <24-12-2021>
+
+Project navbar en footer
+
+*/
+
+/* mobile portrait */
+
+/* margin en padding weghalen en font inladen */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* font inladen */
+@font-face {
+    font-family: SecularOne;
+    src: url(../fonts/SecularOne-Regular.ttf);
+}
+
+/* achtergrondkleur */
+body
+{
+    background-color: #fff;
+}
+
+/* h1 font en size opgeven voor alle paginas */
+h1
+{
+    font-family: SecularOne;
+    font-size: 34px;
+}
+
+/* h2 font en size opgeven voor alle paginas */
+h2
+{
+    font-family: SecularOne;
+    font-size: 26px;
+}
+
+/* h3 font en size opgeven voor alle paginas */
+h3
+{
+    font-family: SecularOne;
+    font-size: 20px;
+}
+
+
+/* positioneren en achtergrondkleur voor navbar */
+header
+{
+    width: 100%;
+    background-color: rgb(6, 56, 82);
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* navbar grote en positionering */
+.navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* logo positioneren en muis naar pointer veranderen om aan te tonen klikbaar */
+.logo
+{
+    width: 157px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+/* grote van hamburger menu icon */
+.menu
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+/* positioneren van de links in de nav naar de rechterkant */
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+/* hamburgermenu positioneren */
+nav ul
+{
+    width: 100%;
+    background-color: rgb(6, 56, 82);
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 2;
+}
+
+/* positioneren links */
+nav ul li
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* navbar icon in menu zetten */
+.menu
+{
+    display: block;
+}
+
+/* grote logo in navbar */
+.logo
+{
+    width: 157px;
+}
+
+/* transition van menu klikken en scrollbar weghalen */
+#menuList
+{
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* list style weghalen en positioneren */
+nav ul li
+{
+    list-style: none;
+    margin-right: 30px;
+}
+
+/* kleur updaten en size */
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: SecularOne;
+}
+
+/* kleur van hover en pagina waar je op zit */
+nav ul li a:hover, .active
+{
+    color: rgb(255, 193, 0);
+}
+
+/* footer positioneren onderaan */
+footer
+{
+    background-color: rgb(6, 56, 82);
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    position:fixed;
+    bottom: 0;
+}
+
+/* font en positie aanpassen en underline geven */
+footer p
+{
+    font-family: SecularOne;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+/* mobile landscape query */
+@media only screen and (max-width: 1022px) and (orientation: landscape)
+{
+
+    /* positionering hamburgermenu links */
+    nav ul li
+    {
+        margin-right: 65px;
+    }
+}
+
+
+/* desktop query */
+@media only screen and (min-width: 1023px)
+{
+    /* transtition uitzetten en menu links altijd zichtbaar */
+    #menuList
+    {
+        overflow:visible;
+        transition: 0s;
+    }
+
+    /* hamburger menu weghalen */
+    .menu
+    {
+        display:none
+    }
+
+    /* positioneren links */
+    nav ul
+    {
+        position: absolute;
+        top: 50px;
+    }
+
+    /* positioneren links */
+    nav ul li
+    {
+        display: inline-block;
+    }
+}

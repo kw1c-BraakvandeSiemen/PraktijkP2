@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- 
+    Auteur:             Siemen van de Braak
+    Aanmaakdatum:       24/12/2021
+    
+    Praktijk Project P2 home pagina
+-->
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Home </title>
+        <link href="./styles/navfoot.css" rel="stylesheet">
+        <link href="./styles/styleHome.css" rel="stylesheet">
+        <script src="./scripts/navbar.js" defer></script>
+
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- afbeelding in navbar linken naar homepage -->
+            <a href="./index.html"><img class="logo" src="./images/Logo2.0.png" alt="Logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./pages/resultaten.html">Resultaten</a></li>
+                    <li><a href="./pages/hobbys.html">Hobby&apos;s &amp; bijzondere kwaliteiten</a></li>
+                    <li><a href="./pages/ervaringen.html">ervaringen</a></li>
+                </ul>
+            </nav>
+            <!-- functie voor hamburger menu mobiel weergaven -->
+            <img class="menu" src="./images/hamburg1.png" alt="HamburgerMenu" onclick="togglemenu()">
+        </div>
+    </header>
+    <main>
+        <figure>
+            <img class="fotoZelf" src="./images/fotozelf.png" alt="AfbeeldingSiemen">
+            <div id="yellowBox">
+
+            </div>
+            <figcaption>Siemen van de Braak</figcaption>
+            <!-- gele balk onder afbeelding -->
+
+        </figure>
+        <article>
+            <h1> 
+                Over Mij
+            </h1>
+            <p>
+                Hey ik ben Siemen. En Welkom op mijn website, ik zal me even voorstellen, mijn naam is Siemen van de Braak, 20 jaar en ik woon in Kerkdriel.
+                Ik volg de opleiding software developer (MBO niveau 4) aan het Koning Willem 1 College (KW1C) in &apos;s-Hertogenbosch.
+            </p>
+            <br>
+            <h2>
+                Hoe ben ik terecht gekomen bij ICT
+            </h2>
+            <p>
+                Voorheen heb ik nog 2 andere opleidingen gevolgt en dat waren international business aan het Koning Willem 1 College <strong>(IBS)</strong> 
+                en audio visueel en animatie <strong>(AVA)</strong> aan het SintLucas. Bij International Business merkte ik al snel dat het niets voor mij was
+                en daarom ben ik er daar ook toen mee gestopt, bij Audio visueel en animatie was dat een ander verhaal ik vond de opleiding erg leuk
+                maar door Corona kon ik eigenlijk een heel jaar niets doen omdat film en verdere opdrachten vooral worden gemaakt in een groepsverband 
+                wat hierdoor dus onmogelijk was en werken in een groepsverband is ook iets wat ik erg leuk vind. Ik heb het toen een jaar aan gekeken maar 
+                er was niet echt een vooruitzicht wat erg stressvol en frustrerend was, toen ben ik begonnen met zoeken naar een 
+                opleiding in een vakgebied wat minder kwetsbaar was en had ik ookal wat bekenden in de ICT sector en zo ben ik weer terug uitgekomen bij het 
+                Koning Willem 1 College en bevalt de opleiding mij erg goed.
+            </p>
+            <br>
+            <h2>
+                Mijn doel
+            </h2>
+            <p>
+                De huidige opleiding die ik volg heeft verschillende trajecten het normale traject <em>(deze duurt 4 jaar)</em> en het versnelde traject
+                <em>(deze duurt 3 jaar)</em> ik doe erg mijn best momenteel om in het versnelde traject te komen om een paar redenen, ik ben erg gemotiveerd en
+                ik vind het leuk om mijzelf uit te dagen ook probeer ik constant mijn werk te verbeteren, verder wil ik graag in het versnelde traject komen omdat
+                ik dan een jaar eerder kan beginnen verder te studeren, maar dan een HBO opleiding te volgen ook natuurlijk in het ICT
+                gebied maar ik weet nu nog niet zeker welke richting ik op zou willen momenteel oogt mijn voorkeur naar game development of robotica.
+            </p>
+        </article>
+        <article>
+            <!-- iframe google maps inladen -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1236.6664410438425!2d5.286052773806246!3d51.69035318897071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6ee883afe78bb%3A0xc7562d84a5056fa0!2sKoning%20Willem%20I%20College!5e0!3m2!1snl!2snl!4v1641572324472!5m2!1snl!2snl"></iframe>
+        </article>
+    </main>
+    <footer>
+        <p>
+            siemen.vandebraak@edu-kw1c.nl
+        </p>
+    </footer>
+</body>
+</html>

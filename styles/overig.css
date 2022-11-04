@@ -1,0 +1,218 @@
+/*
+Auteur: <Siemen van de Braak>
+Aanmaakdatum <10-01-2022>
+
+Project overige paginas
+
+*/
+
+/* mobile portrait */
+
+
+/* stylen anker nav */
+.ankerNav
+{
+    background-color: rgb(28, 103, 189);
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* ul in het midden zetten */
+.ankerNav ul
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;   
+}
+
+/* list style weghalen */
+.ankerNav ul li
+{
+    list-style: none;
+}
+
+/* links stylen */
+.ankerNav ul li a
+{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    font-family: SecularOne;
+}
+/* kleur veranderen voor hover */
+.ankerNav ul li :hover
+{
+    color: rgb(255, 193, 0);
+}
+
+
+/* positionering alles in main */
+main
+{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* breedte van div */
+article
+{
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* achtergrondkleur van div en display flex zorgt ervoor dat afbeelding boven tekst staat */
+article .inhoud
+{
+    flex-direction: column;
+    background: rgb(216, 216, 212);
+    padding: 15px;    
+}
+
+
+/* breedte van afbeelding box */
+article .inhoud .afbeelding
+{
+    max-width: 100%;
+}
+
+/* breedte van afbeelding  */
+article .inhoud .afbeelding img
+{
+    width: 100%;
+    
+}
+
+/* tekst positioneren */
+article .inhoud .tekst
+{
+    margin-left: 10px;
+}
+
+/* hoogte afbeeldingen */
+.hobby
+{
+    height: 170px;
+}
+
+/* hoogte afbeeldingen */
+.erv
+{
+    height: 170px;
+}
+
+/* positioneren h2 */
+h2
+{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* margin toevoegen tussen de h3 en de p */
+h3
+{
+    margin-bottom: 10px;
+}
+
+/* algemene buur */
+h3 ~ p
+{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+/* positioneren h1 */
+h1
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* mobile landscape query */
+@media only screen and (max-width: 1022px) and (orientation: landscape)
+{
+    /* nav inline displayen ipv onder elkaar */
+    .ankerNav ul li
+    {
+        display: inline;
+    }
+    /* nav inline displayen ipv onder elkaar */
+    .ankerNav ul li a
+    {
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    /* achtergrondkleur van div en display flex zorgt ervoor dat afbeelding naast tekst staat */
+    article .inhoud
+    {
+        flex-direction:row;
+        display: flex;
+    }
+
+    /* breedte van afbeelding box */
+    article .inhoud .afbeelding
+    {
+        max-width: 100px;
+    }
+
+    /* hoogte afbeeldingen */
+    .hobby
+    {
+        height: 100%;
+    }
+
+    /* ervaringen afbeeldingen niet laten stretchen op landscape */
+    .erv
+    {
+        height: 55%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+}
+
+/* desktop query */
+@media only screen and (min-width: 1023px)
+{
+    /* achtergrondkleur van div en display flex zorgt ervoor dat afbeelding naast tekst staat */
+    article .inhoud
+    {
+        flex-direction:row;
+        display: flex;
+    }
+
+    /* hoogte afbeeldingen */
+    .hobby
+    {
+        height: 100%;
+    }
+    /* hoogte afbeeldingen */
+    .erv
+    {
+        height: 100%;
+    }
+
+    /* breedte van afbeelding box */
+    article .inhoud .afbeelding
+    {
+        max-width: 200px;
+    }
+    /* nav inline displayen ipv onder elkaar */
+    .ankerNav ul li
+    {
+        list-style: none;
+        margin: 0 20px;
+        display: inline;
+    }
+    /* nav inline displayen ipv onder elkaar */
+    .ankerNav ul li a
+    {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+}

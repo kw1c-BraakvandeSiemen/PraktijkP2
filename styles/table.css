@@ -1,0 +1,48 @@
+/*
+Auteur: <Siemen van de Braak>
+Aanmaakdatum <18-01-2022>
+
+Project tabellen resultaten
+*/
+
+/* alle resoluties hetzelfde */
+
+/* stylen tabel en positioneren in het midden */
+table
+{
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* randen in tabel zetten en positioneren text */
+td, th
+{
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px 0px 3px 0px;
+}
+
+/* kleur beroepsvakken */
+.Beroeps
+{
+    background-color: rgb(255, 193, 0);;
+    color: white;
+}
+
+/* kleur van de AVO vakken */
+.AVO
+{
+    color: white;
+    background-color: rgb(33, 143, 202);
+}
+
+/* centeren text */
+h1, h2
+{
+    text-align: center;
+    margin-top: 20px;
+}

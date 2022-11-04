@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- 
+    Auteur:             Siemen van de Braak
+    Aanmaakdatum:       18/01/2022
+    
+    Praktijk Project P2 resultaten pagina
+-->
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Resultaten </title>
+        <link href="../styles/navfoot.css" rel="stylesheet">
+        <link href="../styles/table.css" rel="stylesheet">
+        <script src="../scripts/navbar.js" defer></script>
+        <script src="../scripts/resultaten.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- afbeelding in navbar linken naar homepage -->
+            <a href="../index.html"><img class="logo" src="../images/Logo2.0.png" alt="Logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="active" href="./resultaten.html">Resultaten</a></li>
+                    <li><a href="./hobbys.html">Hobby&apos;s &amp; bijzondere kwaliteiten</a></li>
+                    <li><a href="./ervaringen.html">ervaringen</a></li>
+                </ul>
+            </nav>
+            <!-- functie voor hamburger menu mobiel weergaven -->
+            <img class="menu" src="../images/hamburg1.png" alt="HamburgerMenu" onclick="togglemenu()">
+        </div>
+    </header>
+    <main>
+        <h1>
+            Resultaten Periode 1
+        </h1>
+
+        <h2>
+            Beroeps vakken
+        </h2>
+        <!-- tabel via js -->
+        <table>
+            <thead class="Beroeps">
+                <td>
+                    Vakken
+                </td>
+                <!-- tabel cellen voor 4 cijfers -->
+                <td colspan="4">
+                    Cijfers
+                </td>
+                <td>
+                    Gemiddelde
+                </td>
+            </thead>
+            <tbody id="tbodyBeroep">
+
+            </tbody>
+            <tfoot>
+                <!--leeg-->
+            </tfoot>
+        </table>
+        <h2>
+            AVO vakken
+        </h2>
+        <table>
+            <thead class="AVO">
+                <td>
+                    Vakken
+                </td>
+                <!-- tabel cellen voor 2 cijfers -->
+                <td colspan="2">
+                    Cijfers
+                </td>
+                <td>
+                    Gemiddelde
+                </td>
+            </thead>
+            <tbody id="tbodyAvo">
+
+            </tbody>
+            <tfoot>
+                <!--leeg-->
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>
+            siemen.vandebraak@edu-kw1c.nl
+        </p>
+    </footer>
+</body>
+</html>
